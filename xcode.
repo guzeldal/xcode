@@ -1,0 +1,285 @@
+#include <stdio.h>
+
+int main ()
+{
+    char name[30];
+    printf("enter name in: \n");
+    scanf("%s",&name);
+    printf("your name is %s \n", name);
+    
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <math.h>
+
+ int main ()
+{
+    double base, power, result;
+     
+    printf("ENter base number: ");
+    scanf("%lf",&base);
+    printf("ENter power number: ");
+    scanf("%lf",&power);
+    result=  pow(base,power);
+    printf("%.1f^%.1f = %.2lf",base,power,result);
+    
+    return(0);
+}
+
+#include <stdio.h>
+
+int main ()
+{
+    int days, km;
+    float charge=0;
+    char type;
+    
+    printf("Enter type of the car: \n -p/P for Passenger \n -s/S for Sports\n -l/L For Land \n");
+    scanf("%c",&type);
+    printf("How many days did you drive the car: ");
+    scanf("%d",&days);
+    printf("How many km did you drive the car: ");
+    scanf("%d",&km);
+    
+    if(type== 'p'|| type=='P'){
+        charge = 32 * days+km * 22;
+    }
+    else if(type== 's'|| type=='S'){
+        charge = 32 * days+km * 22;
+    }
+    else if (type=='l'|| type=='L'){
+        charge = 32 * days+km * 22;
+    }
+    else{
+        printf("wrong!");
+    }
+    printf("charge is: %f\n",charge);
+
+return (0);
+           }
+
+#include <stdio.h>
+
+int main ()
+{
+    int days, km;
+    float charge=0;
+    char type;
+    
+    printf("Enter type of the car: \n -p/P for Passenger \n -s/S for Sports\n -l/L For Land \n");
+    scanf("%c",&type);
+    printf("How many days did you drive the car: ");
+    scanf("%d",&days);
+    printf("How many km did you drive the car: ");
+    scanf("%d",&km);
+    
+    if((type== 'p') || (type=='P'))
+    {
+        if(type== 'p'){
+            charge = 32 * days+km * 22;
+        }
+        else
+            charge = 32 * days+km * 22;
+    }
+    else if(type== 's'|| type=='S')
+    {
+        if(type=='S')
+        {
+            charge = 32 * days+km * 22;
+        }
+        else
+            charge = 32 * days+km * 22;
+    }
+    else if (type=='l'|| type=='L')
+    {
+    if(type=='L'){
+        charge = 32 * days+km * 22;
+    }
+    else
+    {
+        charge = 32 * days+km * 22;
+    }
+}
+    printf("charge is: %f\n",charge);
+
+return (0);
+           }
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int i, num, sum=0,term1=1 ,term2=1;
+    
+    printf("enter a positive integer: ");
+    scanf("%d", &num);
+    printf("1 1 ");
+    
+    for(i=0; i<num-2; ++i)
+    {
+        sum=term1+term2;
+        printf("%d " , sum );
+        term1=term2;
+        term2=sum;
+    
+        
+    }
+
+    return 0;
+}
+
+
+#include <stdio.h>
+ int main ()
+{
+     int num1, num2, num3;
+     printf("enter three numbers: ");
+     scanf("%d%d%d",&num1,&num2,&num3);
+     
+     if(num1<num2 && num3<num2){
+         printf("%d en büyük",num2);
+     }
+     else if(num2<num1 && num3<num1){
+         printf("%d en büyük",num1);
+     }
+        else
+            printf("%d en büyük",num3);
+     return 0;
+ }
+
+#include<stdio.h>
+
+int main ()
+{
+    int days, km;
+    float charge;
+    char type;
+    
+   printf("Enter type of the car: \n -p/P for Passenger \n -s/S for Sports\n -l/L For Land \n");
+    scanf("%c",&type);
+    printf("How many days did you drive the car: ");
+    scanf("%d",&days);
+    printf("How many km did you drive the car: ");
+    scanf("%d",&km);
+    switch(type)
+    {
+        case 'p':
+        case 'P':
+            charge = 32 * days+km * 22;
+            break;
+        case's':
+        case'S':
+            charge = 51 * days+km * 36;
+            break;
+        case'l':
+        case'L':
+            charge = 20 * days+km * 18;
+            break;
+    }
+    printf("total charge is: %.2f tl\n", charge);
+        }
+
+#include <stdio.h>
+
+int main ()
+{
+    int days, km;
+    float charge;
+    char type;
+    
+    printf("Enter type of the car: \n -p/P for Passenger \n -s/S for Sports\n -l/L For Land \n");
+    scanf("%c",&type);
+    printf("How many days did you drive the car: ");
+    scanf("%d",&days);
+    printf("How many km did you drive the car: ");
+    scanf("%d",&km);
+    
+    if(type== 'p'|| type=='P'){
+        charge = 32 * days+km * 22;
+    }
+    else if(type== 's'|| type=='S'){
+        charge = 32 * days+km * 22;
+    }
+    else if (type=='l'|| type=='L'){
+        charge = 32 * days+km * 22;
+    }
+    else{
+        printf("wrong!");
+    }
+    printf("charge is: %f\n",charge);
+
+return (0);
+           }
+
+#include<stdio.h>
+
+int main()
+{
+    float ju,area,base,height;
+    char i;
+    
+    printf("enter s for square t for triangle: ");
+    scanf("%c",&i);
+    
+    if(i=='s')
+    { printf("enter lenght of square's side: ");
+        scanf("%f",&ju);
+        area= ju*ju;
+        printf("the area is %.2f",area);
+    }
+    else if(i=='t')
+    {
+        printf("enter base of triangle:\nenter the height of triangle:\n");
+        scanf("%f%f",&base,&height);
+        area= base*height/2 ;
+        printf("the area is %.2f",area);
+    }
+    else{
+        printf("ne diyon lan!");
+    }
+    return 0;
+    
+}
+
+
+// baslıyorum :D.
+#include <stdio.h>
+
+int main()
+
+{
+    int sales,p=0;
+    float salary;
+    
+        while(p<5)
+        {
+            printf("Enter the sales number of product A: ");
+            scanf("%d",&sales);
+            
+            if(sales<10)
+            {
+                printf("Salary: $2000.00\n");
+                p++;
+            }
+            else if(9<sales && sales<100)
+            {
+                salary = 2000 + 12.5*sales;
+                printf("Salary: $%.2f\n",salary);
+                p++;
+            }
+            else
+            {
+                salary = 2000 + sales*125*15/100;
+                printf("Salary: $%.2f\n",salary);
+                p++;
+            }
+            
+        }
+
+    return 0;
+}
+// bitti :D.
